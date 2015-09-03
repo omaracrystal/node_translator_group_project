@@ -14,6 +14,7 @@ bt.translate('hello.', 'en', 'es', function(err, response) {
 
   res.render('index');
 
+
 });
 
 router.get('/play', function(req, res, next) {
