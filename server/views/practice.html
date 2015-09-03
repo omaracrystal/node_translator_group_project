@@ -14,39 +14,26 @@
   <div class="row">
     <div class="col-md-6">
       <div class="dropdown align spacing">
-        <button class="btn btn-default dropdown-toggle prac-dropdown" type="button" id="languageSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Select Language
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1">
-          <li><a href="#">English</a></li>
-          <li><a href="#">Spanish</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">Spanish</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+        <form id="languageSelectForm">
+          <select class="form-control inline" id="languageSelect">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+        </form>
+
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="dropdown align spacing">
-        <button class="btn btn-default dropdown-toggle prac-dropdown" type="button" id="langugeTranslate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Translation Language
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">Spanish</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>rs
-        </ul>
+        <form id="languageTranslateForm">
+          <select class="form-control inline" id="languageTranslate">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+        </form>
       </div>
     </div>
 
@@ -54,10 +41,10 @@
   <div class="push-down">
     <form class="form" method="post" action="/submit">
       <div class="form-group">
-        <input type="text" class="form-control" id="wordInput" name="name" placeholder="Enter Word to Translate">
+        <input type="text" class="form-control" id="wordInput" name="name" placeholder="Enter Word to Translate" required>
       </div>
       <div class="align">
-        <button type="submit" class="btn btn-success align btn-width">Submit</button>
+        <button type="button" class="btn btn-success align btn-width">Submit</button>
       </div>
     </form>
   </div>
