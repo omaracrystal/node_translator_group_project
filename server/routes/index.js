@@ -14,13 +14,13 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/submit', function(req, res, next){
-  var name = req.body.name;
-  if (name === "") {
+  if (req.body.name === "") {
     res.send("Please enter a name");
   } else {
-  new User(name)
-    .save(function(err, superhero) {
-      res.redirect('/practice');
+  new User({name: req.body.name})
+    .save(function(err, user) {
+      console.log(user);
+      res.send('hi');
     });
   }
 });

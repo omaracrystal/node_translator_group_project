@@ -3,13 +3,13 @@ var Schema = mongoose.Schema;
 
 var User = new Schema ({
   name: String,
-  challengesTaken: number,
-  challengesPasses: number,
-  challengesFailed: number,
-  numWordsTranslated: number,
-  numWordsTranslatedCorrectly: number,
-  numWordsTranslatedIncorrectly: number
+  challengesTaken: Number,
+  challengesPasses: Number,
+  challengesFailed: Number,
+  numWordsTranslated: Number,
+  numWordsTranslatedCorrectly: Number,
+  numWordsTranslatedIncorrectly: Number
 });
 
-mongoose.model('users', User);
-mongoose.connect('mongodb://localhost:3000/');
+module.exports = mongoose.model('users', User);
+mongoose.connect('mongodb://localhost/translator-users');

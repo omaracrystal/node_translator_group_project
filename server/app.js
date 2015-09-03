@@ -1,3 +1,4 @@
+require("./models/user");
 // *** main dependencies *** //
 var express = require('express');
 var path = require('path');
