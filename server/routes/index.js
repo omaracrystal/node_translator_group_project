@@ -21,18 +21,10 @@ router.post('/submit', function(req, res, next){
 
 router.get('/practice', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
-
-bt.translate('hello.', 'en', 'es', function(err, response) {
-     res.json(response);
-   });
-
-  res.render('index');
-
-
 });
 
 router.get('/play', function(req, res, next) {
   res.render('play');
-})
+});
 
 module.exports = router;
