@@ -8,7 +8,7 @@
   <div class="logo">
     <h2>translator</h2>
     <span id="timer">{{ time }}<span>
-      <h4>00:29</h4>
+      <h4>#00:29</h4>
   </div>
 <!-- end logo/ timer area-->
 
@@ -18,7 +18,7 @@
   <div class= "languages">
     <span id= "start">
       {{ start }}
-      <h3>start append</h3>
+      <h3>#start</h3>
     </span>
       <div id= "arrow1">
         {{ arrow }}
@@ -26,7 +26,7 @@
       <arrow>
     <span id= "end">
       {{ end }}
-      <h3>end append</h3>
+      <h3>#end</h3>
     </span>
   </div>
 
@@ -36,9 +36,9 @@
       <span class="caret"></span>
     </a>
       <ul class="dropdown-menu">
-        <li><a href="#">English</a></li>
-        <li><a href="#">Spanish</a></li>
-        <li><a href="#">French</a></li>
+        <li><a href="#">#English</a></li>
+        <li><a href="#">#Spanish</a></li>
+        <li><a href="#">#French</a></li>
       </ul>
   </div>
 
@@ -48,9 +48,9 @@
       <span class="caret"></span>
     </a>
       <ul class="dropdown-menu">
-        <li><a href="#">English</a></li>
-        <li><a href="#">Spanish</a></li>
-        <li><a href="#">French</a></li>
+        <li><a href="#">#English</a></li>
+        <li><a href="#">#Spanish</a></li>
+        <li><a href="#">#French</a></li>
       </ul>
   </div>
 
@@ -62,7 +62,7 @@
   <div class="playArea">
     <div id= "word">
       {{ word }}
-      <h1>word appends here</h1>
+      <h1>#word</h1>
     </div>
 
   <div id="arrow2">
@@ -83,7 +83,7 @@
       <img src="images/greenArrow" alt="greenArrow" id="greenArrow">
     <div id= "guess">
       {{ guess }}
-      <h2>guess append</h2>
+      <h2>#guess</h2>
     </div>
 
     <!--validation area-->
@@ -102,7 +102,7 @@
       <img src="images/blackArrow" alt="blackArrow" id="blackarrow">
     <div id= "answer">
       {{ answer }}
-      <h2>answer append</h2>
+      <h2>#answer</h2>
     </div>
 
   </div>
@@ -112,31 +112,31 @@
 
 <!-- progress bar area-->
   <div class="progressBar">
-    <h1>{{ name }}</h1>
+    <h1>#name {{ name }}</h1>
       <span id="progress">
-        <h3>progress: {{ progress }}</h3>
+        <h3>progress: {{ progress }} #progress</h3>
       </span>
 
       <span id="challenges">
         <h2>challenges:</h2>
         <div class= "circle" id="circle1">
-          <h3>{{ challenges }} #challenge</h3>
-          <h4>pass: {{ pass }}</h4>
-          <h4>fail: {{ fail }}</h4>
+          <h3>{{ challenges }} #of_challenges</h3>
+          <h4>pass: {{ pass }} #of_pass</h4>
+          <h4>fail: {{ fail }} #of_fail</h4>
         </div>
       </span>
 
       <span id="words">
         <h2>words:</h2>
         <div class= "circle" id= "circle2">
-          <h3>{{ words }} #of words</h3>
-          <h4>correct: {{ correct }}</h4>
-          <h4>wrong: {{ wrong }}</h4>
+          <h3>{{ words }} #of_words</h3>
+          <h4>correct: {{ correct }} #of_correct</h4>
+          <h4>wrong: {{ wrong }} #of_wrong</h4>
         </div>
       </span>
 
       <span>
-        <h5>total time: {{ totalTime }}</h5>
+        <h5>total time: {{ totalTime }} #totalTime</h5>
       </span>
   </div>
 <!-- end progress bar area-->
