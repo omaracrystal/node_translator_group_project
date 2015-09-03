@@ -6,10 +6,19 @@
 {% block content %}
 
   <div class="container">
+    <div class="row">
+      <div class="one">
+        <h1 class="align">{{ title }}</h1>
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-
+        <form class="form" method="post" action="/submit">
+          <div class="form-group">
+            <label for="users-name"></label>
+            <input type="text" class="form-control" id="exampleInputName" name="name" placeholder="Enter your name" required>
+          </div>
+          <button type="submit" class="btn btn-danger align">Welcome</button>
+        </form>
+      </div>
+    </div>
   </div>
 
 {% endblock %}
