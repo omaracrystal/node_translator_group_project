@@ -8,7 +8,6 @@
   <div class="logo">
     <h2>translator</h2>
     <span id="timer">{{ time }}<span>
-      <h4>#00:29</h4>
   </div>
 <!-- end logo/ timer area-->
 
@@ -17,18 +16,20 @@
 <!-- language start & end area-->
   <div class= "languages">
     <span id= "start">
-      {{ start }}
-      <h3>#start</h3>
+      <h3>{{ start }}</h3>
     </span>
       <div id= "arrow1">
-        {{ arrow }}
-        <img src="images/arrow.png" alt="arrow">
-      <arrow>
+        <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
+      </div>
     <span id= "end">
-      {{ end }}
-      <h3>#end</h3>
+      <h3>{{ end }}</h3>
     </span>
   </div>
+
+  <!--drop down area -->
+    <img src="images/greenArrow.png" alt="arrow" id="greenArrow" width="5%" size="5%">
+
+    <img src="images/blackArrow.png" alt="arrow" id="blackArrow" width="5%" size="5%">
 
   <div class="btn-group" id="startLang">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -53,6 +54,7 @@
         <li><a href="#">#French</a></li>
       </ul>
   </div>
+  <!--end drop down area -->
 
 <!-- end language start & end area-->
 
@@ -61,16 +63,13 @@
 <!-- play area -->
   <div class="playArea">
     <div id= "word">
-      {{ word }}
-      <h1>#word</h1>
+      <h1>{{ word }}</h1>
     </div>
 
-  <div id="arrow2">
-    <img src="images/arrow.png" alt="arrow">
-  </div>
+    <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
 
 <div class="form-group" id="guessInput">
-  <input type="text" class="form-control" placeholder="enter your guess here">
+  <input type="text" class="form-control" placeholder="enter your guess here" size="50">
 </div>
 <!-- end play area -->
 
@@ -80,29 +79,27 @@
     <div id= "guessHeader">
       <h1>guess</h1>
     </div>
-      <img src="images/greenArrow" alt="greenArrow" id="greenArrow">
+      <img src="images/greenArrow.png" width="6%" height="6%"id="greenArrowGuess">
     <div id= "guess">
-      {{ guess }}
-      <h2>#guess</h2>
+      <h2>{{ guess }}</h2>
     </div>
 
     <!--validation area-->
     <div id= "correct">
-      <img src="images/correct.png" alt="correct">
+      <img src="images/check.png" alt="correct" width="20%" height="20%">
     </div>
 
     <div id= "wrong">
-      <img src="images/wrong.png" alt="wrong">
+      <img src="images/blackX.png" alt="wrong" width="25%" height="25%">
     </div>
     <!--end validation area-->
 
     <div id= "answerHeader">
       <h1>answer</h1>
     </div>
-      <img src="images/blackArrow" alt="blackArrow" id="blackarrow">
+      <img src="images/blackArrow.png" width="6%" height="6%" id="blackarrowGuess">
     <div id= "answer">
-      {{ answer }}
-      <h2>#answer</h2>
+      <h2>{{ answer }}</h2>
     </div>
 
   </div>
@@ -112,33 +109,40 @@
 
 <!-- progress bar area-->
   <div class="progressBar">
-    <h1>#name {{ name }}</h1>
+    <h1>{{ name }}</h1>
       <span id="progress">
-        <h3>progress: {{ progress }} #progress</h3>
+        <h3>progress: {{ progress }}</h3>
       </span>
 
       <span id="challenges">
         <h2>challenges:</h2>
         <div class= "circle" id="circle1">
-          <h3>{{ challenges }} #of_challenges</h3>
-          <h4>pass: {{ pass }} #of_pass</h4>
-          <h4>fail: {{ fail }} #of_fail</h4>
+          <h3>{{ challenges }}</h3>
+          <h4>pass: {{ pass }}</h4>
+          <h4>fail: {{ fail }}</h4>
         </div>
       </span>
 
       <span id="words">
         <h2>words:</h2>
         <div class= "circle" id= "circle2">
-          <h3>{{ words }} #of_words</h3>
-          <h4>correct: {{ correct }} #of_correct</h4>
-          <h4>wrong: {{ wrong }} #of_wrong</h4>
+          <h3>{{ words }}</h3>
+          <h4>correct: {{ correct }}</h4>
+          <h4>wrong: {{ wrong }}</h4>
         </div>
       </span>
 
       <span>
-        <h5>total time: {{ totalTime }} #totalTime</h5>
+        <h6>total time: {{ totalTime }}</h6>
       </span>
   </div>
 <!-- end progress bar area-->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
 
 {% endblock %}
