@@ -7,9 +7,17 @@ var bt = require('../../node_modules/bing-translate/lib/bing-translate.js').init
    });
 
 router.get('/', function(req, res, next) {
+
 bt.translate('hello.', 'en', 'es', function(err, response) {
      res.json(response);
    });
+
+  res.render('index');
+
 });
+
+router.get('/play', function(req, res, next) {
+  res.render('play');
+})
 
 module.exports = router;
