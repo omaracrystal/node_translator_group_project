@@ -51,3 +51,100 @@ a {
 .push-down{
   margin-top: 10%;
 }
+
+
+
+
+/* logo/ timer area */
+.logo {
+
+}
+#timer {
+
+}
+/* end logo/ timer area */
+
+
+/* language start & end area */
+.languages {
+
+}
+#start {
+
+}
+#arrow1 {
+
+}
+#end {
+
+}
+#startLang {
+
+}
+#endLang {
+
+}
+/* end language start & end area */
+
+
+
+/* play area */
+.playArea {
+
+}
+#word {
+
+}
+#arrow2 {
+
+}
+#guessInput {
+
+}
+/* end play area */
+
+
+
+/* checking answers area */
+#guessHeader {
+
+}
+#greenArrow {
+
+}
+#guess {
+
+}
+      /* validation area */
+#correct {
+
+}
+#wrong {
+
+}
+      /* endvalidation area */
+
+/* end checking answers area */
+
+
+/* progress bar area */
+.progressBar {
+
+}
+#progress {
+
+}
+#challenges {
+
+}
+#circle1 {
+
+}
+#words {
+
+}
+#circle2 {
+
+}
+/* end progress bar area */
+
