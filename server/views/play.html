@@ -1,0 +1,144 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+<!-- logo/ timer area-->
+  <div class="logo">
+    <h2>translator</h2>
+    <span id="timer">{{ time }}<span>
+      <h4>00:29</h4>
+  </div>
+<!-- end logo/ timer area-->
+
+
+
+<!-- language start & end area-->
+  <div class= "languages">
+    <span id= "start">
+      {{ start }}
+      <h3>start append</h3>
+    </span>
+      <div id= "arrow1">
+        {{ arrow }}
+        <img src="images/arrow.png" alt="arrow">
+      <arrow>
+    <span id= "end">
+      {{ end }}
+      <h3>end append</h3>
+    </span>
+  </div>
+
+  <div class="btn-group" id="startLang">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    Start
+      <span class="caret"></span>
+    </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Spanish</a></li>
+        <li><a href="#">French</a></li>
+      </ul>
+  </div>
+
+  <div class="btn-group" id="endLang">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    End
+      <span class="caret"></span>
+    </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Spanish</a></li>
+        <li><a href="#">French</a></li>
+      </ul>
+  </div>
+
+<!-- end language start & end area-->
+
+
+
+<!-- play area -->
+  <div class="playArea">
+    <div id= "word">
+      {{ word }}
+      <h1>word appends here</h1>
+    </div>
+
+  <div id="arrow2">
+    <img src="images/arrow.png" alt="arrow">
+  </div>
+
+<div class="form-group" id="guessInput">
+  <input type="text" class="form-control" placeholder="enter your guess here">
+</div>
+<!-- end play area -->
+
+
+
+<!-- checking answers area -->
+    <div id= "guessHeader">
+      <h1>guess</h1>
+    </div>
+      <img src="images/greenArrow" alt="greenArrow" id="greenArrow">
+    <div id= "guess">
+      {{ guess }}
+      <h2>guess append</h2>
+    </div>
+
+    <!--validation area-->
+    <div id= "correct">
+      <img src="images/correct.png" alt="correct">
+    </div>
+
+    <div id= "wrong">
+      <img src="images/wrong.png" alt="wrong">
+    </div>
+    <!--end validation area-->
+
+    <div id= "answerHeader">
+      <h1>answer</h1>
+    </div>
+      <img src="images/blackArrow" alt="blackArrow" id="blackarrow">
+    <div id= "answer">
+      {{ answer }}
+      <h2>answer append</h2>
+    </div>
+
+  </div>
+<!-- end checking answers area -->
+
+
+
+<!-- progress bar area-->
+  <div class="progressBar">
+    <h1>{{ name }}</h1>
+      <span id="progress">
+        <h3>progress: {{ progress }}</h3>
+      </span>
+
+      <span id="challenges">
+        <h2>challenges:</h2>
+        <div class= "circle" id="circle1">
+          <h3>{{ challenges }} #challenge</h3>
+          <h4>pass: {{ pass }}</h4>
+          <h4>fail: {{ fail }}</h4>
+        </div>
+      </span>
+
+      <span id="words">
+        <h2>words:</h2>
+        <div class= "circle" id= "circle2">
+          <h3>{{ words }} #of words</h3>
+          <h4>correct: {{ correct }}</h4>
+          <h4>wrong: {{ wrong }}</h4>
+        </div>
+      </span>
+
+      <span>
+        <h5>total time: {{ totalTime }}</h5>
+      </span>
+  </div>
+<!-- end progress bar area-->
+
+{% endblock %}

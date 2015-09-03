@@ -5,11 +5,21 @@
 
 {% block content %}
 
-  <div class="container">
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+<div class="container">
 
-  </div>
+    <h1>translator</h1>
+
+    <br>
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label>who are you?</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="enter your name" required>
+      <button type="submit" class="btn btn-default">enter</button>
+    </form>
+
+    <hr><br>
+
 
 {% endblock %}
