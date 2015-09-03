@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Language Translator' });
 });
 
+
 router.post('/submit', function(req, res, next){
   console.log(req.body.name);
   if (req.body.name === "") {
@@ -33,6 +34,6 @@ bt.translate('hello.', 'en', 'es', function(err, response) {
 
 router.get('/play', function(req, res, next) {
   res.render('play');
-})
+});
 
 module.exports = router;
