@@ -6,7 +6,8 @@ $(".btn-success").on("click", function(e) {
     word: $("#wordInput").val().trim()
   };
 
-  $.post('/', payload, function(data) {
-    console.log(data);
+  $.post('/api/practice', payload, function(data) {
+    $("#result").empty();
+    $("#result").append(data);
   });
 });

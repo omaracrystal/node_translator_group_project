@@ -7,9 +7,13 @@ var bt = require('../../node_modules/bing-translate/lib/bing-translate.js').init
 });
 
 router.post("/practice", function(req, res, next) {
-  console.log("hi");
-  res.send("HI");
-  // bt.translate('hello.', 'en', 'es', function(err, response) {
-  //   res.json(response);
-  // });
+  console.log(req.body);
+  var languageFrom = req.body.languageFrom;
+  var languageTo = req.body.languageTo;
+  var word = req.body.word;
+  bt.translate(word, languageFrom, languageTo, function(err, response) {
+    res.json(response.translated_text);
+  });
 });
+
+module.exports = router;
