@@ -2,5 +2,5 @@ So, I went a little crazy and put together some template ideas in Adobe Illustra
 
 Let me know what you guys think!
 
-![alt tag](main.png)
+![alt tag](Main.png)
 ![alt tag](Play.png)
