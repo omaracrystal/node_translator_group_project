@@ -1,15 +1,10 @@
 {% extends 'layout.html' %}
-
 {% block title %}{% endblock %}
-
-
 {% block content %}
-
 <div class="container">
     <div class="row">
       <div class="one">
         <h1 class="align">{{ title }}</h1>
-
         <form class="form">
           <div class="form-group">
             <label for="user-name"></label>
@@ -20,11 +15,8 @@
       </div>
     </div>
   </div>
-
   <div id="user-table">
-
       <h2>All Users</h2>
-
       <div>
         <table class="table">
           <thead>
@@ -37,10 +29,7 @@
           </tbody>
         </table>
       </div>
-
     </div>
-
-
   <form id="edit-form">
     <h2>Edit User</h2>
     <div class="form-group">
@@ -49,7 +38,4 @@
     <button type="submit" class="btn btn-primary update-button">Update</button>
     <button class="btn btn-success" id="cancel-edit">Cancel</button>
   </form>
-
-
-
 {% endblock %}

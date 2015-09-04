@@ -5,7 +5,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
           <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">{{data.name}}</h3>
+              <h3 class="panel-title">{{user.name}}</h3>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -35,15 +35,18 @@
                       </tr>
                       <tr>
                         <td>Words Translated Incorrectly:</td>
-                        <td>Male</td>
+                        <td>{{user.id}}</td>
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                  <div class="form-group">
+                    <div>
+                      <a href="/practice/{{user.id}}" class="btn btn-success align btn-width">Practice</a>
+                      <a href="/play/{{user.id}}" class="btn btn-danger align btn-width">Challenge</a>
+                    </div>
+                  </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

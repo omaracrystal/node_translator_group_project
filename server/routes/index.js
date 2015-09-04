@@ -41,7 +41,7 @@ router.post('/submit', function(req, res, next){
   }
 });
 
-router.get('/practice', function(req, res, next) {
+router.get('/practice/:id', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
 });
 
@@ -49,7 +49,11 @@ router.get('/play', function(req, res, next) {
   var randomWord = randomWords();
   console.log(randomWord);
   res.render('play', {
+<<<<<<< HEAD
     // randomWord : randomWord,
+=======
+    randomWord : randomWord,
+>>>>>>> 5f9efa0623625cd66ad24d45988ff9f4e209ba6c
     // languageTo : languageTo,
     // languageFrom : languageFrom
   });
@@ -58,9 +62,9 @@ router.get('/play', function(req, res, next) {
 // get SINGLE user
 router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
-  user.findOne(query, function(err, user){
+  User.findOne(query, function(err, user){
     console.log(user);
-    res.json(user);
+    res.render('profile', {user:user});
   });
 });
 
@@ -84,9 +88,11 @@ router.delete('/user/:id', function(req, res) {
   });
 });
 
-router.get('/practice/:id', function(req, res, next) {
+router.get('/users/:id', function(req, res, next) {
   res.render('profile', { title: 'Language Translator' });
 });
+
+
 
 
 
