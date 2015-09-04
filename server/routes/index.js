@@ -84,4 +84,10 @@ router.delete('/user/:id', function(req, res) {
   });
 });
 
+router.get('/practice/:id', function(req, res, next) {
+  res.render('profile', { title: 'Language Translator' });
+});
+
+
+
 module.exports = router;
