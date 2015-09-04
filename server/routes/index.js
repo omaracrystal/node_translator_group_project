@@ -50,8 +50,8 @@ router.get('/play/:id', function(req, res, next) {
   console.log(randomWord);
   res.render('play', {
     randomWord : randomWord,
-    languageTo : languageTo,
-    languageFrom : languageFrom
+    // languageTo : languageTo,
+    // languageFrom : languageFrom
   });
 });
 
