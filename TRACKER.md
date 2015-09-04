@@ -17,14 +17,7 @@
 1. Add TDD to our utilities
 1. Add a charting library to the progress section
 1. Use firebase instead of mongo
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-1. refactor html with bootstrap themes 
->>>>>>> 0e2e7567b67b7e1cb924a195557c4229bfad9e9e
-=======
 1. refactor html with bootstrap themes
->>>>>>> 6c4067adc286448df5e5d2044ab0e3a72866321e
 
 ## DONE
+1. add random word generator
