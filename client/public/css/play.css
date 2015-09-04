@@ -1,6 +1,6 @@
 /* add custom styles */
 body {
-  padding: 5px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,7 +9,7 @@ a {
 }
 
 h1 {
-
+  font-size: 70px;
 }
 h2 {
 
@@ -32,7 +32,7 @@ h5 {
   min-width: 200px;
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 2%;
   z-index: 0;
   /*border: solid 1px black;*/
 }
@@ -121,49 +121,63 @@ h5 {
 }
 #word {
   font-size: 200px;
-  max-width: 200px;
-  min-width: 150px;
+  width: 70%;
   position: fixed;
-  top: 30%;
-  right: 55%;
-  /*border: solid 1px black;*/
+  top: 35%;
+  right: 30%;
+/*  border: solid 1px black;*/
+  text-align: center;
 }
 #arrowDown {
   max-width: 40px;
   min-width: 20px;
   position: fixed;
-  top: 44%;
-  right: 64%;
+  top: 58%;
+  right: 62%;
   /*border: solid 1px black;*/
 }
 #guessInput {
-/*  max-width: 300px;
-  min-width: 150px;*/
+  width: 60%;
   position: fixed;
-  top: 55%;
-  right: 43%;
+  top: 70%;
+  right: 35%;
 }
 input, input[placeholder]{
 font-weight:bold;
-    color:red;
+    color: green;
     text-align:center;
 border-radius: 25px;
 }
+#submit {
+  position: fixed;
+  top: 78%;
+  right: 58%;
+  border-radius: 25px;
+}
 /* end play area */
 
+/* OPTIONAL */
+#modal-746724 {
+  width:70%;
+  position: fixed;
+  bottom: 10%;
+  right: 30%;
+}
 
-
-/* checking answers area */
+/* OPTIONAL checking answers area */
 #guessHeader {
+  visibility: hidden;
   position: fixed;
   top: 63%;
   right: 80%;
   /*border: solid 1px black;*/
 }
 #greenArrow2 {
+  visibility: hidden;
   /*border: solid 1px black;*/
 }
 #guess {
+  visibility: hidden;
   position: fixed;
   top: 83%;
   right: 77%;
@@ -172,30 +186,35 @@ border-radius: 25px;
 }
       /* validation area */
 #correct {
+  visibility: hidden;
   position: fixed;
   top: 70%;
   right: 32%;
   /*border: solid 1px black;*/
 }
 #wrong {
+  visibility: hidden;
   position: fixed;
   top: 70%;
   right: 38%;
   /*border: solid 1px black;*/
 }
 #answerHeader {
+  visibility: hidden;
   position: fixed;
   top: 63%;
   right: 40%;
   /*border: solid 1px black;*/
 }
 #answer {
+  visibility: hidden;
   position: fixed;
   top: 83%;
   right: 37%;
   /*border: solid 1px black;*/
 }
 #greenArrowGuess {
+  visibility: hidden;
   max-width: 60px;
   min-width: 50px;
   position: fixed;
@@ -203,6 +222,7 @@ border-radius: 25px;
   right: 84%;
 }
 #blackarrowGuess {
+  visibility: hidden;
   max-width: 60px;
   min-width: 50px;
   position: fixed;

@@ -7,7 +7,7 @@
 <!-- logo/ timer area-->
   <div class="logo">
     <h2>translator</h2>
-    <span id="timer">{{ time }}<span>
+    <span id="timer">{{ time }}{ time }<span>
   </div>
 <!-- end logo/ timer area-->
 
@@ -16,13 +16,13 @@
 <!-- language start & end area-->
   <div class= "languages">
     <span id= "start">
-      <h3>{{ start }}</h3>
+      <h3>{{ start }}{ start }</h3>
     </span>
       <div id= "arrow1">
         <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
       </div>
     <span id= "end">
-      <h3>{{ end }}</h3>
+      <h3>{{ end }}{ end }</h3>
     </span>
   </div>
 
@@ -63,14 +63,15 @@
 <!-- play area -->
   <div class="playArea">
     <div id= "word">
-      <h1>{{ word }}</h1>
+      <h1>{{ word }}{ word }</h1>
     </div>
 
     <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
 
-<div class="form-group" id="guessInput">
-  <input type="text" class="form-control" placeholder="enter your guess here" size="50">
-</div>
+  <div class="form-group" id="guessInput">
+    <input type="text" class="form-control" placeholder="enter your guess here" size="50">
+  </div>
+    <button type="submit" class="btn btn-default btn-xs" id="submit">Submit Guess</button>
 <!-- end play area -->
 
 
@@ -137,6 +138,44 @@
       </span>
   </div>
 <!-- end progress bar area-->
+
+
+<!-- optional -->
+<!-- MODAL -->
+       <a id="modal-746724" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                You answer was
+              </h4>
+            </div>
+            <div class="modal-body" id="passOrfail">
+              Correct! or Wrong :(
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
+                End Game
+              </button>
+              <button type="button" class="btn btn-primary" id="continueGame">
+                Continue Game
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+<!-- END MODAL -->
+<!-- optional -->
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
