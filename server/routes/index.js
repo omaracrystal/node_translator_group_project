@@ -58,9 +58,9 @@ router.get('/play/:id', function(req, res, next) {
 // get SINGLE user
 router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
-  user.findOne(query, function(err, user){
+  User.findOne(query, function(err, user){
     console.log(user);
-    res.json(user);
+    res.render('profile', {user:user});
   });
 });
 
@@ -84,7 +84,7 @@ router.delete('/user/:id', function(req, res) {
   });
 });
 
-router.get('/practice/:id', function(req, res, next) {
+router.get('/users/:id', function(req, res, next) {
   res.render('profile', { title: 'Language Translator' });
 });
 
