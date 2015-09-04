@@ -1,0 +1,58 @@
+/* language start & end area */
+.col-md-6{
+  width: 30%;
+  position: fixed;
+}
+#startDrop {
+  top: 0%;
+  right: 48%;
+ }
+#endDrop {
+  top: 0%;
+  right: 23%;
+}
+
+
+.languages {
+  width: 25%;
+  position: fixed;
+  top: 15px;
+  right: 30%;
+  z-index: 0;
+  /*border: solid 1px black;*/
+}
+#blackArrow {
+  max-width: 50px;
+  min-width: 40px;
+  position: fixed;
+  top: 15%;
+  right: 40%;
+  z-index: 0;
+  border: solid 1px black;
+}
+#greenArrow {
+  max-width: 50px;
+  min-width: 40px;
+  position: fixed;
+  top: 15%;
+  right: 65%;
+  z-index: 0;
+  /*border: solid 1px black;*/
+}
+#startLang {
+  width: 15%;
+  position: fixed;
+  top: 90px;
+  right: 55%;
+  z-index: 0;
+  /*border: solid 1px black;*/
+}
+#endLang {
+  width: 15%;
+  position: fixed;
+  top: 90px;
+  right: 30%;
+  z-index: 0;
+  /*border: solid 1px black;*/
+}
+/* end language start & end area */
