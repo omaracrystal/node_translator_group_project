@@ -17,6 +17,6 @@
 1. Add TDD to our utilities
 1. Add a charting library to the progress section
 1. Use firebase instead of mongo
-
+1. refactor html with bootstrap themes 
 
 ## DONE
