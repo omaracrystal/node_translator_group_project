@@ -1,6 +1,6 @@
 /* add custom styles */
 body {
-  padding: 5px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,10 +9,10 @@ a {
 }
 
 h1 {
-
+  font-size: 70px;
 }
 h2 {
-
+  font-size: 250%;
 }
 h3 {
 
@@ -24,7 +24,13 @@ h5 {
 
 }
 
-
+.containerLeft{
+  min-width: 570px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  border: solid 1px red;
+}
 
 /* logo/ timer area */
 .logo {
@@ -32,7 +38,7 @@ h5 {
   min-width: 200px;
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 2%;
   z-index: 0;
   /*border: solid 1px black;*/
 }
@@ -43,19 +49,20 @@ h5 {
 
 
 /* language start & end area */
-.languages {
-  width: 25%;
-  position: fixed;
-  top: 15px;
-  right: 30%;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
 #start {
   width: 15%;
   position: fixed;
-  top: 15px;
+  top: 3%;
   right: 55%;
+  text-align: center;
+  z-index: 0;
+  /*border: solid 1px black;*/
+}
+#end {
+  width: 15%;
+  position: fixed;
+  top: 3%;
+  right: 30%;
   text-align: center;
   z-index: 0;
   /*border: solid 1px black;*/
@@ -65,49 +72,6 @@ h5 {
   position: fixed;
   top: 30px;
   right: 46%;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
-#blackArrow {
-  max-width: 50px;
-  min-width: 40px;
-  position: fixed;
-  top: 15%;
-  right: 40%;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
-#greenArrow {
-  max-width: 50px;
-  min-width: 40px;
-  position: fixed;
-  top: 15%;
-  right: 65%;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
-#end {
-  width: 15%;
-  position: fixed;
-  top: 15px;
-  right: 30%;
-  text-align: center;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
-#startLang {
-  width: 15%;
-  position: fixed;
-  top: 90px;
-  right: 55%;
-  z-index: 0;
-  /*border: solid 1px black;*/
-}
-#endLang {
-  width: 15%;
-  position: fixed;
-  top: 90px;
-  right: 30%;
   z-index: 0;
   /*border: solid 1px black;*/
 }
@@ -121,49 +85,64 @@ h5 {
 }
 #word {
   font-size: 200px;
-  max-width: 200px;
-  min-width: 150px;
+  width: 70%;
   position: fixed;
-  top: 30%;
-  right: 55%;
-  /*border: solid 1px black;*/
+  top: 28%;
+  right: 30%;
+/*  border: solid 1px black;*/
+  text-align: center;
 }
 #arrowDown {
   max-width: 40px;
   min-width: 20px;
   position: fixed;
-  top: 44%;
-  right: 64%;
+  top: 58%;
+  right: 62%;
   /*border: solid 1px black;*/
 }
 #guessInput {
-/*  max-width: 300px;
-  min-width: 150px;*/
+  width: 60%;
   position: fixed;
-  top: 55%;
-  right: 43%;
+  top: 70%;
+  right: 35%;
 }
 input, input[placeholder]{
 font-weight:bold;
-    color:red;
+    color: green;
     text-align:center;
 border-radius: 25px;
 }
+#submit {
+  width: 20%;
+  position: fixed;
+  top: 78%;
+  right: 55%;
+  border-radius: 25px;
+}
 /* end play area */
 
+/* OPTIONAL */
+#modal-746724 {
+  width:70%;
+  position: fixed;
+  bottom: 10%;
+  right: 30%;
+}
 
-
-/* checking answers area */
+/* OPTIONAL checking answers area */
 #guessHeader {
+  visibility: hidden;
   position: fixed;
   top: 63%;
   right: 80%;
   /*border: solid 1px black;*/
 }
 #greenArrow2 {
+  visibility: hidden;
   /*border: solid 1px black;*/
 }
 #guess {
+  visibility: hidden;
   position: fixed;
   top: 83%;
   right: 77%;
@@ -172,30 +151,35 @@ border-radius: 25px;
 }
       /* validation area */
 #correct {
+  visibility: hidden;
   position: fixed;
   top: 70%;
   right: 32%;
   /*border: solid 1px black;*/
 }
 #wrong {
+  visibility: hidden;
   position: fixed;
   top: 70%;
   right: 38%;
   /*border: solid 1px black;*/
 }
 #answerHeader {
+  visibility: hidden;
   position: fixed;
   top: 63%;
   right: 40%;
   /*border: solid 1px black;*/
 }
 #answer {
+  visibility: hidden;
   position: fixed;
   top: 83%;
   right: 37%;
   /*border: solid 1px black;*/
 }
 #greenArrowGuess {
+  visibility: hidden;
   max-width: 60px;
   min-width: 50px;
   position: fixed;
@@ -203,6 +187,7 @@ border-radius: 25px;
   right: 84%;
 }
 #blackarrowGuess {
+  visibility: hidden;
   max-width: 60px;
   min-width: 50px;
   position: fixed;
@@ -226,6 +211,12 @@ border-radius: 25px;
   z-index: 0;
   text-align: center;
   /*border: solid 1px black;*/
+}
+.progress {
+  width: 90%;
+  position: relative;
+  right: -5%;
+  border-radius: 25px;
 }
 #progress {
   /*border: solid 1px black;*/

@@ -20,3 +20,4 @@
 1. refactor html with bootstrap themes
 
 ## DONE
+1. add random word generator

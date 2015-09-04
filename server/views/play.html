@@ -4,10 +4,11 @@
 
 
 {% block content %}
+<div class= "containerLeft">
 <!-- logo/ timer area-->
   <div class="logo">
     <h2>translator</h2>
-    <span id="timer">{{ time }}<span>
+    <span id="timer">{{ time }}{ time }</span>
   </div>
 <!-- end logo/ timer area-->
 
@@ -16,45 +17,15 @@
 <!-- language start & end area-->
   <div class= "languages">
     <span id= "start">
-      <h3>{{ start }}</h3>
+      <h3>{{ start }}{ start }</h3>
     </span>
       <div id= "arrow1">
         <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
       </div>
     <span id= "end">
-      <h3>{{ end }}</h3>
+      <h3>{{ end }}{ end }</h3>
     </span>
   </div>
-
-  <!--drop down area -->
-    <img src="images/greenArrow.png" alt="arrow" id="greenArrow" width="5%" size="5%">
-
-    <img src="images/blackArrow.png" alt="arrow" id="blackArrow" width="5%" size="5%">
-
-  <div class="btn-group" id="startLang">
-    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-    Start
-      <span class="caret"></span>
-    </a>
-      <ul class="dropdown-menu">
-        <li><a href="#">#English</a></li>
-        <li><a href="#">#Spanish</a></li>
-        <li><a href="#">#French</a></li>
-      </ul>
-  </div>
-
-  <div class="btn-group" id="endLang">
-    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-    End
-      <span class="caret"></span>
-    </a>
-      <ul class="dropdown-menu">
-        <li><a href="#">#English</a></li>
-        <li><a href="#">#Spanish</a></li>
-        <li><a href="#">#French</a></li>
-      </ul>
-  </div>
-  <!--end drop down area -->
 
 <!-- end language start & end area-->
 
@@ -63,21 +34,22 @@
 <!-- play area -->
   <div class="playArea">
     <div id= "word">
-      <h1>{{ word }}</h1>
+      <h1>{{ randomWord }}{ random word }</h1>
     </div>
 
     <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
 
-<div class="form-group" id="guessInput">
-  <input type="text" class="form-control" placeholder="enter your guess here" size="50">
-</div>
+  <div class="form-group" id="guessInput">
+    <input type="text" class="form-control" placeholder="enter your guess here" size="50">
+  </div>
+    <button type="submit" class="btn btn-default btn-xs" id="submit">Submit Guess</button>
 <!-- end play area -->
 
 
 
 <!-- checking answers area -->
     <div id= "guessHeader">
-      <h1>guess</h1>
+      <h2>guess</h2>
     </div>
       <img src="images/greenArrow.png" width="6%" height="6%"id="greenArrowGuess">
     <div id= "guess">
@@ -95,7 +67,7 @@
     <!--end validation area-->
 
     <div id= "answerHeader">
-      <h1>answer</h1>
+      <h2>answer</h2>
     </div>
       <img src="images/blackArrow.png" width="6%" height="6%" id="blackarrowGuess">
     <div id= "answer">
@@ -104,12 +76,18 @@
 
   </div>
 <!-- end checking answers area -->
-
+</div>
 
 
 <!-- progress bar area-->
   <div class="progressBar">
-    <h1>{{ name }}</h1>
+    <h2>{{ name }}name</h2>
+
+      <div class="progress">
+        <div class="progress-bar progress-success" id="progressBar">
+        </div>
+      </div>
+
       <span id="progress">
         <h3>progress: {{ progress }}</h3>
       </span>
@@ -137,6 +115,44 @@
       </span>
   </div>
 <!-- end progress bar area-->
+
+
+<!-- optional -->
+<!-- MODAL -->
+       <a id="modal-746724" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                You answer was
+              </h4>
+            </div>
+            <div class="modal-body" id="passOrfail">
+              Correct! or Wrong :(
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
+                End Game
+              </button>
+              <button type="button" class="btn btn-primary" id="continueGame">
+                Continue Game
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+<!-- END MODAL -->
+<!-- optional -->
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
