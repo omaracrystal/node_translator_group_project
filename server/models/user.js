@@ -3,6 +3,8 @@ var Schema = mongoose.Schema;
 
 var User = new Schema ({
   name: String,
+  languageTo: String,
+  languageFrom: String,
   challengesTaken: Number,
   challengesPasses: Number,
   challengesFailed: Number,
