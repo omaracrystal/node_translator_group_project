@@ -15,4 +15,8 @@ router.post("/practice", function(req, res, next) {
   });
 });
 
+router.post("/play", function(req, res, next){
+
+});
+
 module.exports = router;

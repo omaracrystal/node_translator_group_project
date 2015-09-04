@@ -1,4 +1,5 @@
 var express = require('express');
+var randomWords = require('random-words');
 var router = express.Router();
 var mongoose = require('mongoose');
 var User = mongoose.model('users');
@@ -28,8 +29,14 @@ router.get('/practice', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
 });
 
-router.get('/play', function(req, res, next) {
-  res.render('play');
+router.get('/play/:id', function(req, res, next) {
+  var randomWord = randomWords();
+  console.log(randomWord);
+  res.render('play', {
+    randomWord : randomWord,
+    languageTo : langaugeTo,
+    languageFrom : languageFrom
+  });
 });
 
 module.exports = router;
