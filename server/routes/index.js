@@ -11,7 +11,7 @@ var bt = require('../../node_modules/bing-translate/lib/bing-translate.js').init
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Language Translator' });
 });
-
+// get all users
 router.get('/users', function(req, res) {
   User.find(function(err, users){
     console.log(users);
@@ -19,6 +19,14 @@ router.get('/users', function(req, res) {
   });
 });
 
+// get SINGLE user
+router.get('/user/:id', function(req, res) {
+  var query = {"_id": req.params.id};
+  User.findOne(query, function(err, user){
+    // console.log(user);
+    res.json(user);
+  });
+});
 
 router.post('/submit', function(req, res, next){
   if (req.body.name === "") {

@@ -2,7 +2,7 @@ $(document).on('ready', function(){
   // $('#edit-form').hide();
   listUsers();
 });
-
+// create user and show list of users
 $('form').on('submit', function(e){
   e.preventDefault();
   // form inputs
@@ -11,7 +11,6 @@ $('form').on('submit', function(e){
     name: $userName,
   };
   console.log($userName);
-
   $.post('/submit', payload, function(data) {
     console.log(data.message);
     $( "#results" ).html(data.message);
@@ -19,9 +18,21 @@ $('form').on('submit', function(e){
     $(':input', 'form').val('');
     listUsers();
   });
-
-
 });
+// edit user
+$(document).on('click', '.edit-button', function(){
+  $.get('/user/'+$(this).attr('id'), function(data){
+    $('#edit-name').val(data.name);
+    $('.update-button').attr('id', data._id);
+  });
+  $('#edit-form').show();
+  $('#user-table').hide();
+});
+
+
+
+
+
 
 
 $(document).on('click', '#cancel-edit', function(e) {
