@@ -21,6 +21,35 @@
     </div>
   </div>
 
+  <div id="user-table">
+
+      <h2>All Users</h2>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody id="all">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+  <form id="edit-form">
+    <h2>Edit User</h2>
+    <div class="form-group">
+      <input type="text" class="form-control" id="edit-name">
+    </div>
+    <button type="submit" class="btn btn-primary update-button">Update</button>
+    <button class="btn btn-success" id="cancel-edit">Cancel</button>
+  </form>
+
 
 
 {% endblock %}
