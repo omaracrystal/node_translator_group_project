@@ -4,10 +4,11 @@
 
 
 {% block content %}
+<div class= "containerLeft">
 <!-- logo/ timer area-->
   <div class="logo">
     <h2>translator</h2>
-    <span id="timer">{{ time }}{ time }<span>
+    <span id="timer">{{ time }}{ time }</span>
   </div>
 <!-- end logo/ timer area-->
 
@@ -78,7 +79,7 @@
 
 <!-- checking answers area -->
     <div id= "guessHeader">
-      <h1>guess</h1>
+      <h2>guess</h2>
     </div>
       <img src="images/greenArrow.png" width="6%" height="6%"id="greenArrowGuess">
     <div id= "guess">
@@ -96,7 +97,7 @@
     <!--end validation area-->
 
     <div id= "answerHeader">
-      <h1>answer</h1>
+      <h2>answer</h2>
     </div>
       <img src="images/blackArrow.png" width="6%" height="6%" id="blackarrowGuess">
     <div id= "answer">
@@ -105,12 +106,18 @@
 
   </div>
 <!-- end checking answers area -->
-
+</div>
 
 
 <!-- progress bar area-->
   <div class="progressBar">
-    <h1>{{ name }}</h1>
+    <h2>{{ name }}name</h2>
+
+      <div class="progress">
+        <div class="progress-bar progress-success" id="progressBar">
+        </div>
+      </div>
+
       <span id="progress">
         <h3>progress: {{ progress }}</h3>
       </span>

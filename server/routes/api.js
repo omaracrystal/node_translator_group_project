@@ -7,7 +7,6 @@ var bt = require('../../node_modules/bing-translate/lib/bing-translate.js').init
 });
 
 router.post("/practice", function(req, res, next) {
-  console.log(req.body);
   var languageFrom = req.body.languageFrom;
   var languageTo = req.body.languageTo;
   var word = req.body.word;

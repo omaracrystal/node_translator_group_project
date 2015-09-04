@@ -12,7 +12,7 @@ h1 {
   font-size: 70px;
 }
 h2 {
-
+  font-size: 250%;
 }
 h3 {
 
@@ -24,7 +24,13 @@ h5 {
 
 }
 
-
+.containerLeft{
+  min-width: 500px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  border: solid 1px red;
+}
 
 /* logo/ timer area */
 .logo {
