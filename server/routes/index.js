@@ -12,6 +12,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Language Translator' });
 });
 
+router.get('/users', function(req, res) {
+  User.find(function(err, users){
+    console.log(users);
+    res.json(users);
+  });
+});
+
 
 router.post('/submit', function(req, res, next){
   if (req.body.name === "") {
@@ -19,7 +26,8 @@ router.post('/submit', function(req, res, next){
   } else {
   new User({name: req.body.name})
     .save(function(err, user) {
-      res.redirect('practice');
+      console.log(user);
+      res.json({message : 'success'});
     });
   }
 });
