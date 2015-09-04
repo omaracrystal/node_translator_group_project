@@ -41,7 +41,7 @@ router.post('/submit', function(req, res, next){
   }
 });
 
-router.get('/practice', function(req, res, next) {
+router.get('/practice/:id', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
 });
 
@@ -87,6 +87,8 @@ router.delete('/user/:id', function(req, res) {
 router.get('/users/:id', function(req, res, next) {
   res.render('profile', { title: 'Language Translator' });
 });
+
+
 
 
 

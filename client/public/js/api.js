@@ -1,5 +1,5 @@
 //post request for practice page
-$(".btn-success").on("click", function(e) {
+$("#practice-question").on("click", function(e) {
   e.preventDefault();
   payload = {
     languageFrom: $("#languageSelect :selected").val(),
@@ -14,7 +14,7 @@ $(".btn-success").on("click", function(e) {
 });
 
 //post request for challenge page
-$(".btn-success").on("click", function(e) {
+$("").on("click", function(e) {
   e.preventDefault();
   payload = {
     languageFrom: $("#languageSelect :selected").val(),
@@ -23,6 +23,6 @@ $(".btn-success").on("click", function(e) {
   };
 
   $.post('/api/play', payload, function(data) {
-    $("#result")
+    $("#result");
   });
 });

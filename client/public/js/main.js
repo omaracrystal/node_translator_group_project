@@ -71,6 +71,7 @@ $(document).on('click', '#cancel-edit', function(e) {
   $('#user-table').show();
 });
 
+
 //helper function
 function listUsers() {
   $.get('/users', function(data) {
