@@ -40,14 +40,14 @@ h5 {
 
 }
 
-.containerLeft{
+/*.containerLeft{
   min-width: 800px;
   position: fixed;
   top: 0%;
   left: 0%;
   border: solid 1px red;
   z-index: 2;
-}
+}*/
 
 /* logo/ timer area */
 .logo {
@@ -74,6 +74,16 @@ h5 {
   text-align: center;
   z-index: 0;
   /*border: solid 1px black;*/
+}
+#startModal{
+  font-size: 33px;
+  font-color: green;
+  width: 15%;
+  position: fixed;
+  top: 4%;
+  right: 52%;
+  text-align: center;
+  z-index: 2;
 }
 #end {
   width: 15%;
@@ -144,77 +154,6 @@ border-radius: 25px;
   bottom: 10%;
   right: 30%;
 }
-
-/* OPTIONAL checking answers area */
-#guessHeader {
-  visibility: hidden;
-  position: fixed;
-  top: 63%;
-  right: 80%;
-  /*border: solid 1px black;*/
-}
-#greenArrow2 {
-  visibility: hidden;
-  /*border: solid 1px black;*/
-}
-#guess {
-  visibility: hidden;
-  position: fixed;
-  top: 83%;
-  right: 77%;
-  /*border: solid 1px black;*/
-  /*border: solid 1px black;*/
-}
-      /* validation area */
-#correct {
-  visibility: hidden;
-  position: fixed;
-  top: 70%;
-  right: 32%;
-  /*border: solid 1px black;*/
-}
-#wrong {
-  visibility: hidden;
-  position: fixed;
-  top: 70%;
-  right: 38%;
-  /*border: solid 1px black;*/
-}
-#answerHeader {
-  visibility: hidden;
-  position: fixed;
-  top: 63%;
-  right: 40%;
-  /*border: solid 1px black;*/
-}
-#answer {
-  visibility: hidden;
-  position: fixed;
-  top: 83%;
-  right: 37%;
-  /*border: solid 1px black;*/
-}
-#greenArrowGuess {
-  visibility: hidden;
-  max-width: 60px;
-  min-width: 50px;
-  position: fixed;
-  top: 76%;
-  right: 84%;
-}
-#blackarrowGuess {
-  visibility: hidden;
-  max-width: 60px;
-  min-width: 50px;
-  position: fixed;
-  top: 76%;
-  right: 45%;
-  /*border: solid 1px black;*/
-}
-      /* endvalidation area */
-
-/* end checking answers area */
-
 
 /* progress bar area */
 .progressBar {

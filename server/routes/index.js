@@ -45,13 +45,13 @@ router.get('/practice', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
 });
 
-router.get('/play/:id', function(req, res, next) {
+router.get('/play', function(req, res, next) {
   var randomWord = randomWords();
   console.log(randomWord);
   res.render('play', {
-    randomWord : randomWord,
-    languageTo : languageTo,
-    languageFrom : languageFrom
+    // randomWord : randomWord,
+    // languageTo : languageTo,
+    // languageFrom : languageFrom
   });
 });
 
