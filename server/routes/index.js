@@ -19,8 +19,7 @@ router.post('/submit', function(req, res, next){
   } else {
   new User({name: req.body.name})
     .save(function(err, user) {
-      console.log(user);
-      res.send('hi');
+      res.redirect('practice');
     });
   }
 });

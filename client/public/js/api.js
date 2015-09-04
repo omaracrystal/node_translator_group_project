@@ -10,4 +10,8 @@ $(".btn-success").on("click", function(e) {
     $("#result").empty();
     $("#result").append(data);
   });
+
+  $.post('/api/play', payload, function(data) {
+    $("#")
+  })
 });
