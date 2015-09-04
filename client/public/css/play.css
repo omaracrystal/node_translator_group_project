@@ -253,6 +253,12 @@ border-radius: 25px;
   text-align: center;
   /*border: solid 1px black;*/
 }
+.progress {
+  width: 90%;
+  position: relative;
+  right: -5%;
+  border-radius: 25px;
+}
 #progress {
   /*border: solid 1px black;*/
 }
