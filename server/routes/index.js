@@ -1,8 +1,8 @@
 var express = require('express');
 var randomWords = require('random-words');
 var router = express.Router();
-// var mongoose = require('mongoose');
-// var User = mongoose.model('users');
+var mongoose = require('mongoose');
+var User = mongoose.model('users');
 var keys=require('../routes/key');
 var bt = require('../../node_modules/bing-translate/lib/bing-translate.js').init({
      client_id:keys.client_id,
@@ -55,12 +55,32 @@ router.get('/play/:id', function(req, res, next) {
   });
 });
 
-// get SINGLE superhero
-router.get('/play/:id', function(req, res) {
+// get SINGLE user
+router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
-  Superhero.findOne(query, function(err, superhero){
-    // console.log(superhero);
-    res.json(superhero);
+  user.findOne(query, function(err, user){
+    console.log(user);
+    res.json(user);
+  });
+});
+
+// update SINGLE user
+router.put('/user/:id', function(req, res) {
+  var query = {"_id": req.params.id};
+  var update = req.body;
+  var options = {new: true};
+  User.findOneAndUpdate(query, update, options, function(err, user){
+    // console.log(user);
+    res.json(user);
+  });
+});
+
+// delete SINGLE user
+router.delete('/user/:id', function(req, res) {
+  var query = {"_id": req.params.id};
+  User.findOneAndRemove(query, function(err, user){
+    // console.log(user);
+    res.json(user);
   });
 });
 
