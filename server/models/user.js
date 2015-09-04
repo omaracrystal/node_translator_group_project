@@ -1,5 +1,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f9efa0623625cd66ad24d45988ff9f4e209ba6c
 
 var User = new Schema ({
   name: String,

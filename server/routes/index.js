@@ -51,18 +51,46 @@ router.get('/play/:id', function(req, res, next) {
   console.log(randomWord);
   res.render('play', {
     randomWord : randomWord,
-    languageTo : languageTo,
-    languageFrom : languageFrom
+    // languageTo : languageTo,
+    // languageFrom : languageFrom
   });
 });
 
-// get SINGLE superhero
-router.get('/play/:id', function(req, res) {
+// get SINGLE user
+router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
-  Superhero.findOne(query, function(err, superhero){
-    // console.log(superhero);
-    res.json(superhero);
+  User.findOne(query, function(err, user){
+    console.log(user);
+    res.render('profile', {user:user});
   });
 });
+
+// update SINGLE user
+router.put('/user/:id', function(req, res) {
+  var query = {"_id": req.params.id};
+  var update = req.body;
+  var options = {new: true};
+  User.findOneAndUpdate(query, update, options, function(err, user){
+    // console.log(user);
+    res.json(user);
+  });
+});
+
+// delete SINGLE user
+router.delete('/user/:id', function(req, res) {
+  var query = {"_id": req.params.id};
+  User.findOneAndRemove(query, function(err, user){
+    // console.log(user);
+    res.json(user);
+  });
+});
+
+router.get('/users/:id', function(req, res, next) {
+  res.render('profile', { title: 'Language Translator' });
+});
+
+
+
+
 
 module.exports = router;
