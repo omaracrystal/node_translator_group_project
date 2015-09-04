@@ -1,3 +1,4 @@
+  <!--drop down area option 1-->
 <div class="col-md-6" id="startDrop">
   <div class="dropdown align spacing">
     <form id="languageSelectForm">
@@ -23,9 +24,9 @@
     </form>
   </div>
 </div>
+ <!--end drop down area -->
 
-
-  <!--drop down area -->
+  <!--drop down area option 2-->
     <img src="images/greenArrow.png" alt="arrow" id="greenArrow" width="5%" size="5%">
 
     <img src="images/blackArrow.png" alt="arrow" id="blackArrow" width="5%" size="5%">
@@ -55,3 +56,32 @@
       </ul>
   </div>
   <!--end drop down area -->
+
+
+  <!-- checking answers area -->
+    <div id= "guessHeader">
+      <h2>guess</h2>
+    </div>
+      <img src="images/greenArrow.png" width="6%" height="6%"id="greenArrowGuess">
+    <div id= "guess">
+      <h2>{{ guess }}</h2>
+    </div>
+
+    <!--validation area-->
+    <div id= "correct">
+      <img src="images/check.png" alt="correct" width="20%" height="20%">
+    </div>
+
+    <div id= "wrong">
+      <img src="images/blackX.png" alt="wrong" width="25%" height="25%">
+    </div>
+    <!--end validation area-->
+
+    <div id= "answerHeader">
+      <h2>answer</h2>
+    </div>
+      <img src="images/blackArrow.png" width="6%" height="6%" id="blackarrowGuess">
+    <div id= "answer">
+      <h2>{{ answer }}</h2>
+    </div>
+<!-- end checking answers area -->

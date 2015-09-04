@@ -1,4 +1,20 @@
 /* add custom styles */
+
+@media screen and (max-width: 800px) {
+  .progressBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containerLeft {
+    position: fixed;
+    min-width: 600px;
+    max-width: 800px;
+  }
+}
+
+
 body {
   padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,7 +25,7 @@ a {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 h2 {
   font-size: 250%;
@@ -25,11 +41,12 @@ h5 {
 }
 
 .containerLeft{
-  min-width: 570px;
+  min-width: 800px;
   position: fixed;
   top: 0%;
   left: 0%;
   border: solid 1px red;
+  z-index: 2;
 }
 
 /* logo/ timer area */
@@ -70,7 +87,7 @@ h5 {
 #arrow1_image {
   min-width: 60px;
   position: fixed;
-  top: 30px;
+  top: 6%;
   right: 46%;
   z-index: 0;
   /*border: solid 1px black;*/
@@ -84,7 +101,6 @@ h5 {
   /*border: solid 1px black;*/
 }
 #word {
-  font-size: 200px;
   width: 70%;
   position: fixed;
   top: 28%;
@@ -96,7 +112,7 @@ h5 {
   max-width: 40px;
   min-width: 20px;
   position: fixed;
-  top: 58%;
+  top: 55%;
   right: 62%;
   /*border: solid 1px black;*/
 }

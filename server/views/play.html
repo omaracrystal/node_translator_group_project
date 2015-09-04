@@ -39,43 +39,16 @@
 
     <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
 
-  <div class="form-group" id="guessInput">
-    <input type="text" class="form-control" placeholder="enter your guess here" size="50">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="enter your guess here" size="50" id="guessInput">
   </div>
     <button type="submit" class="btn btn-default btn-xs" id="submit">Submit Guess</button>
+  </div>
 <!-- end play area -->
 
 
 
-<!-- checking answers area -->
-    <div id= "guessHeader">
-      <h2>guess</h2>
-    </div>
-      <img src="images/greenArrow.png" width="6%" height="6%"id="greenArrowGuess">
-    <div id= "guess">
-      <h2>{{ guess }}</h2>
-    </div>
 
-    <!--validation area-->
-    <div id= "correct">
-      <img src="images/check.png" alt="correct" width="20%" height="20%">
-    </div>
-
-    <div id= "wrong">
-      <img src="images/blackX.png" alt="wrong" width="25%" height="25%">
-    </div>
-    <!--end validation area-->
-
-    <div id= "answerHeader">
-      <h2>answer</h2>
-    </div>
-      <img src="images/blackArrow.png" width="6%" height="6%" id="blackarrowGuess">
-    <div id= "answer">
-      <h2>{{ answer }}</h2>
-    </div>
-
-  </div>
-<!-- end checking answers area -->
 </div>
 
 
@@ -129,7 +102,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 ×
               </button>
-              <h4 class="modal-title" id="myModalLabel">
+              <h4 class="modal-title" id="modalGuess">
                 You answer was
               </h4>
             </div>
