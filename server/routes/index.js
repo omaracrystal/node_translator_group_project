@@ -45,12 +45,16 @@ router.get('/practice/:id', function(req, res, next) {
   res.render('practice', { title: 'Language Translator' });
 });
 
-<<<<<<< HEAD
-router.get('/play', function(req, res, next) {
-=======
+
+// router.get('/play', function(req, res, next) {
+//   var randomWord = randomWords();
+//   res.render('play' )
+//   res.render('play', {
+//     randomWord : randomWord,
+// }
+
 router.get('/play/:id', function(req, res, next) {
   console.log(req.params.id);
->>>>>>> eac3ef587bcf110e9865177cf6aa1911fcac9703
   var randomWord = randomWords();
   console.log(randomWord);
   res.render('play', {
