@@ -49,11 +49,7 @@ router.get('/play', function(req, res, next) {
   var randomWord = randomWords();
   console.log(randomWord);
   res.render('play', {
-<<<<<<< HEAD
-    // randomWord : randomWord,
-=======
     randomWord : randomWord,
->>>>>>> 5f9efa0623625cd66ad24d45988ff9f4e209ba6c
     // languageTo : languageTo,
     // languageFrom : languageFrom
   });

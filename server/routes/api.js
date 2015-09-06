@@ -16,6 +16,15 @@ router.post("/practice", function(req, res, next) {
 });
 
 router.post("/play", function(req, res, next) {
+  var languageFrom = req.body.languageFrom;
+  var languageTo = req.body.languageTo;
+  var randomWord = req.body.randomWord;
+  bt.translate(word, languageFrom, languageTo, function(err, response) {
+    res.json(response.translated_text);
+  });
+});
+
+router.post("/play", function(req, res, next) {
 
 });
 
