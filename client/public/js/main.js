@@ -2,6 +2,7 @@ $(document).on('ready', function() {
   $('#edit-form').hide();
   listUsers();
 });
+
 // create user and show list of users
 $('form').on('submit', function(e) {
   e.preventDefault();
@@ -77,11 +78,11 @@ function listUsers() {
   $.get('/users', function(data) {
     for (var i = 0; i < data.length; i++) {
       $('#all').prepend(
-        '<tr>' +
-        '<td><a href="users/' + data[i]._id + '">' + data[i].name + '</a></td>' +
-        '<td><a class="btn btn-danger btn-xs delete-button" id="' + data[i]._id + '" role="button">Delete</a>' +
-        '&nbsp;<a class="btn btn-primary btn-xs edit-button" id="' + data[i]._id + '" role="button">Edit</a></td>' +
-        '</tr>'
+        '<tr>'+
+          '<td><a href="/practice/'+data[i]._id+'">'+data[i].name+'</a></td>'+
+          '<td><a class="btn btn-danger btn-xs delete-button" id="'+data[i]._id+'" role="button">Delete</a>'+
+          '&nbsp;<a class="btn btn-primary btn-xs edit-button" id="'+data[i]._id+'" role="button">Edit</a></td>'+
+          '</tr>'
       );
     }
   });
