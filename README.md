@@ -2,5 +2,5 @@ So, I went a little crazy and put together some template ideas in Adobe Illustra
 
 Let me know what you guys think!
 
-![alt tag](main.jpg)
-![alt tag](play.jpg)
+![alt tag](translate1.png)
+![alt tag](translate2.png)
