@@ -6,115 +6,68 @@
 {% block content %}
 <div class= "containerLeft">
 <!-- logo/ timer area-->
-  <div class="logo">
-    <h2>translator</h2>
-    <span id="timer">{{ time }}{ time }</span>
-  </div>
+ <div class="logo">
+   <h2>translator</h2>
+   <span id="timer">{{ time }}{ time }</span>
+ </div>
 <!-- end logo/ timer area-->
 
 
-
 <!-- language start & end area-->
-  <div class= "languages">
-    <span id= "start">
-      <h3>{{ start }}</h3>
-    </span>
+ <div class= "languages">
+   <span id= "start">
+     <h3>{{ start }}</h3>
+   </span>
 
-<!-- MODAL -->
-
- <a id="startModal" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">start</a>
-
-      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-              </button>
-              <h4 class="modal-title" id="modalGuess">
-                Please pick your challenge
-              </h4>
-            </div>
-            <div class="modal-body" id="passOrfail">
-                <!--drop down area option 1-->
-        <div class="col-md-6" id="startDrop">
-        <div class="dropdown align spacing">
-        <form id="languageSelectForm">
-           <label for="Language">Starting Language</label>
-           <select class="form-control inline" id="languageSelect">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="fr">French</option>
-           </select>
-        </form>
-        </div>
-        </div>
-
-        <div class="col-md-6" id="endDrop">
-        <div class="dropdown align spacing">
-        <form id="languageSelectForm">
-           <label for="Language">Ending Language</label>
-           <select class="form-control inline" id="languageSelect">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="fr">French</option>
-           </select>
-        </form>
-        </div>
-        </div>
-        <!--end drop down area -->
-            </div>
-            <div class="modal-footer">
-
-              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
-                End Game
-              </button>
-              <button type="button" class="btn btn-success" id="continueGame">
-                Start Game
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-<!-- END MODAL -->
-
-      <div id= "arrow1">
-        <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
-      </div>
-    <span id= "end">
-      <h3>{{ end }}{ end }</h3>
-    </span>
-  </div>
+     <div id= "arrow1">
+       <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
+     </div>
+   <span id= "end">
+     <h3>{{ end }}{ end }</h3>
+   </span>
+ </div>
 
 <!-- end language start & end area-->
 
 
-
 <!-- play area -->
-  <div class="playArea">
-    <div id= "word">
-      <h1>{{ randomWord }}</h1>
-    </div>
+ <div class="playArea">
+   <div id= "word">
+     <h1>{{ randomWord }}</h1>
+   </div>
 
-    <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
+   <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
 
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="enter your translation here" size="50" id="guessInput">
+ <div class="form-group">
+   <input type="text" class="form-control" placeholder="enter your translation here" size="50" id="guessInput">
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
- <div class="modal-dialog modal-sm">
+<!-- MODAL -->
+      <!-- Button trigger modal -->
+<button type="button" id= "submit" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+ Submit Guess
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
    <div class="modal-content">
-     ...
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+     </div>
+     <div class="modal-body" id="passOrFail">
+       ...Hello
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary" data-dismiss="modal">Next word</button>
+     </div>
    </div>
  </div>
 </div>
-<!-- end play area -->
+<!-- END MODAL -->
 
+<!-- end play area -->
 
 
 
@@ -122,62 +75,47 @@
 
 
 <!-- progress bar area-->
-  <div class="progressBar">
-    <h2>{{ name }}name</h2>
+ <div class="progressBar">
+   <h2>{{ name }}name</h2>
 
-      <div class="progress">
-        <div class="progress-bar progress-success" id="progressBar">
-        </div>
-      </div>
+     <div class="progress">
+       <div class="progress-bar progress-success" id="progressBar">
+       </div>
+     </div>
 
-      <span id="progress">
-        <h3>progress: {{ progress }}</h3>
-      </span>
+     <span id="progress">
+       <h3>progress: {{ progress }}</h3>
+     </span>
 
-      <span id="challenges">
-        <h2>challenges:</h2>
-        <div class= "circle" id="circle1">
-          <h3>{{ challenges }}</h3>
-          <h4>pass: {{ pass }}</h4>
-          <h4>fail: {{ fail }}</h4>
-        </div>
-      </span>
+     <span id="challenges">
+       <h2>challenges:</h2>
+       <div class= "circle" id="circle1">
+         <h3>{{ challenges }}</h3>
+         <h4>pass: {{ pass }}</h4>
+         <h4>fail: {{ fail }}</h4>
+       </div>
+     </span>
 
-      <span id="words">
-        <h2>words:</h2>
-        <div class= "circle" id= "circle2">
-          <h3>{{ words }}</h3>
-          <h4>correct: {{ correct }}</h4>
-          <h4>wrong: {{ wrong }}</h4>
-        </div>
-      </span>
+     <span id="words">
+       <h2>words:</h2>
+       <div class= "circle" id= "circle2">
+         <h3>{{ words }}</h3>
+         <h4>correct: {{ correct }}</h4>
+         <h4>wrong: {{ wrong }}</h4>
+       </div>
+     </span>
 
-      <span>
-        <h6>total time: {{ totalTime }}</h6>
-      </span>
-  </div>
+     <span>
+       <h6>total time: {{ totalTime }}</h6>
+     </span>
+ </div>
 <!-- end progress bar area-->
 
 
-<!-- optional -->
-<!-- MODAL -->
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
- <div class="modal-dialog modal-sm">
-   <div class="modal-content">
-     Hello!
-    </div>
- </div>
-</div>
-<!-- END MODAL -->
-<!-- optional -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
 
 {% endblock %}
