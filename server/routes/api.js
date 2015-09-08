@@ -24,5 +24,8 @@ router.post("/play", function(req, res, next) {
   });
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3d9ce5c80c48d253812ad36d29811791b38ce11
 module.exports = router;

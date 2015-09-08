@@ -42,10 +42,15 @@ router.post('/submit', function(req, res, next){
 });
 
 router.get('/practice/:id', function(req, res, next) {
-  res.render('practice', { title: 'Language Translator' });
+  var query = {"_id": req.params.id};
+  User.findOne(query, function(err, user){
+    // console.log(user);
+    res.render('practice', {user:user, title: 'Language Translator'});
+  });
 });
 
 
+<<<<<<< HEAD
 // router.get('/play', function(req, res, next) {
 //   var randomWord = randomWords();
 //   res.render('play' )
@@ -53,6 +58,8 @@ router.get('/practice/:id', function(req, res, next) {
 //   randomWord : randomWord,
 // }
 
+=======
+>>>>>>> b3d9ce5c80c48d253812ad36d29811791b38ce11
 router.get('/play/:id', function(req, res, next) {
   console.log(req.params.id);
   var randomWord = randomWords();
@@ -70,7 +77,7 @@ router.get('/play/:id', function(req, res, next) {
 router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
   User.findOne(query, function(err, user){
-    console.log(user);
+    // console.log(user);
     res.render('profile', {user:user});
   });
 });

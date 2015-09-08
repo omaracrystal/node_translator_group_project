@@ -13,7 +13,6 @@
 <!-- end logo/ timer area-->
 
 
-
 <!-- language start & end area-->
  <div class= "languages">
    <span id= "start">
@@ -81,8 +80,6 @@
      </div>
    </div>
 
-<!-- END MODAL -->
-
      <div id= "arrow1">
        <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
      </div>
@@ -94,11 +91,57 @@
 <!-- end language start & end area-->
 
 
+     <div id= "arrow1">
+       <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
+     </div>
+   <span id= "end">
+     <h3>{{ end }}{ end }</h3>
+   </span>
+ </div>
 <!-- play area -->
  <div class="playArea">
    <div id= "word">
      <h1>{{ randomWord }}</h1>
    </div>
+
+   <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
+
+ <div class="form-group">
+   <input type="text" class="form-control" placeholder="enter your translation here" size="50" id="guessInput">
+
+
+<!-- play area -->
+ <div class="playArea">
+   <div id= "word">
+     <h1>{{ randomWord }}</h1>
+   </div>
+<!-- MODAL -->
+      <!-- Button trigger modal -->
+<button type="button" id= "submit" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+ Submit Guess
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+     </div>
+     <div class="modal-body" id="passOrFail">
+       ...Hello
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary" data-dismiss="modal">Next word</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- END MODAL -->
+
+<!-- end play area -->
 
    <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
 
@@ -128,15 +171,52 @@
      </div>
    </div>
  </div>
+
 </div>
 <!-- END MODAL -->
 
 <!-- end play area -->
 
 
-
 </div>
 
+
+<!-- progress bar area-->
+ <div class="progressBar">
+   <h2>{{ name }}name</h2>
+
+     <div class="progress">
+       <div class="progress-bar progress-success" id="progressBar">
+       </div>
+     </div>
+
+     <span id="progress">
+       <h3>progress: {{ progress }}</h3>
+     </span>
+
+     <span id="challenges">
+       <h2>challenges:</h2>
+       <div class= "circle" id="circle1">
+         <h3>{{ challenges }}</h3>
+         <h4>pass: {{ pass }}</h4>
+         <h4>fail: {{ fail }}</h4>
+       </div>
+     </span>
+
+     <span id="words">
+       <h2>words:</h2>
+       <div class= "circle" id= "circle2">
+         <h3>{{ words }}</h3>
+         <h4>correct: {{ correct }}</h4>
+         <h4>wrong: {{ wrong }}</h4>
+       </div>
+     </span>
+
+     <span>
+       <h6>total time: {{ totalTime }}</h6>
+     </span>
+ </div>
+<!-- end progress bar area-->
 
 <!-- progress bar area-->
  <div class="progressBar">
