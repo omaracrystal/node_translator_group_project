@@ -79,7 +79,7 @@ function listUsers() {
     for (var i = 0; i < data.length; i++) {
       $('#all').prepend(
         '<tr>'+
-          '<td><a href="/practice/'+data[i]._id+'">'+data[i].name+'</a></td>'+
+          '<td><a href="/users/'+data[i]._id+'">'+data[i].name+'</a></td>'+
           '<td><a class="btn btn-success btn-xs delete-button" id="'+data[i]._id+'" role="button">Delete</a>'+
           '&nbsp;<a class="btn btn-primary btn-xs edit-button" id="'+data[i]._id+'" role="button">Edit</a></td>'+
           '</tr>'
