@@ -46,13 +46,6 @@ router.get('/practice/:id', function(req, res, next) {
 });
 
 
-// router.get('/play', function(req, res, next) {
-//   var randomWord = randomWords();
-//   res.render('play' )
-//   res.render('play', {
-//     randomWord : randomWord,
-// }
-
 router.get('/play/:id', function(req, res, next) {
   console.log(req.params.id);
   var randomWord = randomWords();
