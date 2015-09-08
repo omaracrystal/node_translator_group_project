@@ -84,7 +84,7 @@
 <!-- END MODAL -->
 
       <div id= "arrow1">
-        <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
+        <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
       </div>
     <span id= "end">
       <h3>{{ end }}{ end }</h3>
@@ -101,13 +101,36 @@
       <h1>{{ randomWord }}</h1>
     </div>
 
-    <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
+    <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
 
   <div class="form-group">
     <input type="text" class="form-control" placeholder="enter your translation here" size="50" id="guessInput">
-  </div>
-    <button type="submit" class="btn btn-default btn-xs" id="submit">Submit Guess</button>
-  </div>
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close" id= "submit"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+     </div>
+     <div class="modal-body">
+       ...
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary">Save changes</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- END MODAL -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+ <div class="modal-dialog modal-sm">
+   <div class="modal-content">
+     ...
+   </div>
+ </div>
+</div>
 <!-- end play area -->
 
 
@@ -156,38 +179,15 @@
 
 <!-- optional -->
 <!-- MODAL -->
-       <a id="modal-746724" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
 
-      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-              </button>
-              <h4 class="modal-title" id="modalGuess">
-                You answer was
-              </h4>
-            </div>
-            <div class="modal-body" id="passOrfail">
-              Correct! or Wrong :(
-            </div>
-            <div class="modal-footer">
-
-              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
-                End Game
-              </button>
-              <button type="button" class="btn btn-primary" id="continueGame">
-                Continue Game
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+ <div class="modal-dialog modal-sm">
+   <div class="modal-content">
+     Hello!
     </div>
+ </div>
+</div>
 <!-- END MODAL -->
 <!-- optional -->
 
