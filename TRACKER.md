@@ -7,7 +7,7 @@
 
 
 ## CURRENT
-1. user should be able to select their name in the opening screen
+
 
 
 ## ICEBOX
@@ -21,6 +21,7 @@
 
 ## DONE
 1. add random word generator
+1. user should be able to select their name in the opening screen
 
 
 
