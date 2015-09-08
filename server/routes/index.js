@@ -50,7 +50,7 @@ router.get('/practice/:id', function(req, res, next) {
 //   var randomWord = randomWords();
 //   res.render('play' )
 //   res.render('play', {
-//     randomWord : randomWord,
+//   randomWord : randomWord,
 // }
 
 router.get('/play/:id', function(req, res, next) {
@@ -60,7 +60,9 @@ router.get('/play/:id', function(req, res, next) {
   res.render('play', {
     randomWord : randomWord,
     // languageTo : languageTo,
-    // languageFrom : languageFrom
+    // languageFrom : languageFrom,
+    // startLang : startLang,
+    // endLang : endLang
   });
 });
 

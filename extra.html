@@ -85,3 +85,67 @@
       <h2>{{ answer }}</h2>
     </div>
 <!-- end checking answers area -->
+
+
+<!-- MODAL -->
+
+ <a id="startModal" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">start</a>
+
+      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+              </button>
+              <h4 class="modal-title" id="modalGuess">
+                Please pick your challenge
+              </h4>
+            </div>
+            <div class="modal-body" id="passOrfail">
+                <!--drop down area option 1-->
+        <div class="col-md-6" id="startDrop">
+        <div class="dropdown align spacing">
+        <form id="languageSelectForm">
+           <label for="Language">Starting Language</label>
+           <select class="form-control inline" id="languageSelect">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+           </select>
+        </form>
+        </div>
+        </div>
+
+        <div class="col-md-6" id="endDrop">
+        <div class="dropdown align spacing">
+        <form id="languageSelectForm">
+           <label for="Language">Ending Language</label>
+           <select class="form-control inline" id="languageSelect">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+           </select>
+        </form>
+        </div>
+        </div>
+        <!--end drop down area -->
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
+                End Game
+              </button>
+              <button type="button" class="btn btn-success" id="continueGame">
+                Start Game
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+<!-- END MODAL -->

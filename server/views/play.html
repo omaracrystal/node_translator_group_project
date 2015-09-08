@@ -20,71 +20,8 @@
       <h3>{{ start }}</h3>
     </span>
 
-<!-- MODAL -->
-
- <a id="startModal" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">start</a>
-
-      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-              </button>
-              <h4 class="modal-title" id="modalGuess">
-                Please pick your challenge
-              </h4>
-            </div>
-            <div class="modal-body" id="passOrfail">
-                <!--drop down area option 1-->
-        <div class="col-md-6" id="startDrop">
-        <div class="dropdown align spacing">
-        <form id="languageSelectForm">
-           <label for="Language">Starting Language</label>
-           <select class="form-control inline" id="languageSelect">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="fr">French</option>
-           </select>
-        </form>
-        </div>
-        </div>
-
-        <div class="col-md-6" id="endDrop">
-        <div class="dropdown align spacing">
-        <form id="languageSelectForm">
-           <label for="Language">Ending Language</label>
-           <select class="form-control inline" id="languageSelect">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="fr">French</option>
-           </select>
-        </form>
-        </div>
-        </div>
-        <!--end drop down area -->
-            </div>
-            <div class="modal-footer">
-
-              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
-                End Game
-              </button>
-              <button type="button" class="btn btn-success" id="continueGame">
-                Start Game
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-<!-- END MODAL -->
-
       <div id= "arrow1">
-        <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
+        <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
       </div>
     <span id= "end">
       <h3>{{ end }}{ end }</h3>
@@ -101,13 +38,37 @@
       <h1>{{ randomWord }}</h1>
     </div>
 
-    <img src="images/arrowDown.png" alt="arrow" id="arrowDown">
+    <img src="../images/arrowDown.png" alt="arrow" id="arrowDown">
 
   <div class="form-group">
     <input type="text" class="form-control" placeholder="enter your translation here" size="50" id="guessInput">
+
+<!-- MODAL -->
+       <!-- Button trigger modal -->
+<button type="button" id= "submit" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+  Submit Guess
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body" id="passOrFail">
+        ...Hello
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Next word</button>
+      </div>
+    </div>
   </div>
-    <button type="submit" class="btn btn-default btn-xs" id="submit">Submit Guess</button>
-  </div>
+</div>
+<!-- END MODAL -->
+
 <!-- end play area -->
 
 
@@ -152,44 +113,6 @@
       </span>
   </div>
 <!-- end progress bar area-->
-
-
-<!-- optional -->
-<!-- MODAL -->
-       <a id="modal-746724" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-
-      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×
-              </button>
-              <h4 class="modal-title" id="modalGuess">
-                You answer was
-              </h4>
-            </div>
-            <div class="modal-body" id="passOrfail">
-              Correct! or Wrong :(
-            </div>
-            <div class="modal-footer">
-
-              <button type="button" class="btn btn-default" data-dismiss="modal" id="endGame">
-                End Game
-              </button>
-              <button type="button" class="btn btn-primary" id="continueGame">
-                Continue Game
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-<!-- END MODAL -->
-<!-- optional -->
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
