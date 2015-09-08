@@ -42,7 +42,11 @@ router.post('/submit', function(req, res, next){
 });
 
 router.get('/practice/:id', function(req, res, next) {
-  res.render('practice', { title: 'Language Translator' });
+  var query = {"_id": req.params.id};
+  User.findOne(query, function(err, user){
+    // console.log(user);
+    res.render('practice', {user:user, title: 'Language Translator'});
+  });
 });
 
 
@@ -61,7 +65,7 @@ router.get('/play/:id', function(req, res, next) {
 router.get('/users/:id', function(req, res) {
   var query = {"_id": req.params.id};
   User.findOne(query, function(err, user){
-    console.log(user);
+    // console.log(user);
     res.render('profile', {user:user});
   });
 });
