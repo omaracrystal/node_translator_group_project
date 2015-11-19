@@ -30,6 +30,6 @@ A fun translator tool that uses helps users learn new languages and take challen
 :----------------------------------:|:--:|:----------------------------------:
 ![](translator_modal.png)            |    | ![](translator_Stats.png)
 
-
-![**Challenge Page**](translator_Challenge.png)
+**Challenge Page**
+![](translator_Challenge.png)
 
