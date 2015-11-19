@@ -36,15 +36,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#startModal {
+  color: #45C944;
 }
 
 h1 {
   font-size: 60px;
 }
 h2 {
-  font-size: 250%;
+
+}
+#lator{
+  color: #45C944;
 }
 h3 {
 
@@ -104,8 +107,8 @@ h5 {
 #end {
   width: 15%;
   position: fixed;
-  top: 3%;
-  right: 30%;
+  top: 4%;
+  right: 32%;
   text-align: center;
   z-index: 0;
   /*border: solid 1px black;*/
@@ -178,7 +181,7 @@ border-radius: 25px;
   position: fixed;
   top: 0px;
   right: 0px;
-  background: #A3CCCC;
+  background: #5CB85C;
   z-index: 0;
   text-align: center;
   /*border: solid 1px black;*/
@@ -194,6 +197,16 @@ border-radius: 25px;
 }
 #challenges {
   /*border: solid 1px black;*/
+}
+.circle {
+  padding-top: .018px;
+  position: relative;
+  margin: auto;
+  background: white;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  right: 10px;
 }
 #circle1 {
   /*border: solid 1px black;*/

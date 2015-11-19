@@ -7,8 +7,8 @@
 <div class= "containerLeft">
 <!-- logo/ timer area-->
  <div class="logo">
-   <h2>translator</h2>
-   <span id="timer">{{ time }}{ time }</span>
+   <h2>trans<span id="lator">lator</span></h2>
+   <span id="timer">{{ time }}</span>
  </div>
 <!-- end logo/ timer area-->
 
@@ -21,7 +21,7 @@
 
 <!-- MODAL -->
 
-<a id="startModal" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">start</a>
+<a id="startModal" href="#modal-container-746724" role="button" class="btn" data-toggle="modal">english</a>
 
      <div class="modal fade" id="modal-container-746724" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
        <div class="modal-dialog">
@@ -84,20 +84,11 @@
        <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
      </div>
    <span id= "end">
-     <h3>{{ end }}{ end }</h3>
+     <h3>{{ spanish }}spanish</h3>
    </span>
  </div>
 
 <!-- end language start & end area-->
-
-
-     <div id= "arrow1">
-       <img src="../images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
-     </div>
-   <span id= "end">
-     <h3>{{ end }}{ end }</h3>
-   </span>
- </div>
 <!-- play area -->
  <div class="playArea">
    <div id= "word">
@@ -183,7 +174,7 @@
 
 <!-- progress bar area-->
  <div class="progressBar">
-   <h2>{{ name }}name</h2>
+   <h2>{{ name }}<b>crystal</b></h2>
 
      <div class="progress">
        <div class="progress-bar progress-success" id="progressBar">
@@ -195,7 +186,7 @@
      </span>
 
      <span id="challenges">
-       <h2>challenges:</h2>
+       <h2><b>challenges:</b></h2>
        <div class= "circle" id="circle1">
          <h3>{{ challenges }}</h3>
          <h4>pass: {{ pass }}</h4>
@@ -220,37 +211,43 @@
 
 <!-- progress bar area-->
  <div class="progressBar">
-   <h2>{{ name }}name</h2>
+   <h2>{{ name }}crystal</h2>
 
      <div class="progress">
        <div class="progress-bar progress-success" id="progressBar">
        </div>
      </div>
 
-     <span id="progress">
+  <!--    <span id="progress">
        <h3>progress: {{ progress }}</h3>
      </span>
-
+     <br> -->
      <span id="challenges">
        <h2>challenges:</h2>
        <div class= "circle" id="circle1">
          <h3>{{ challenges }}</h3>
-         <h4>pass: {{ pass }}</h4>
-         <h4>fail: {{ fail }}</h4>
+         <h4><b>pass:</b></h4>
+         <h3>3{{ pass }}</h3>
+         <h4><b>fail:</b></h4>
+         <h3>1{{ fail }}</h3>
        </div>
      </span>
 
      <span id="words">
-       <h2>words:</h2>
+       <h2><b>words:</b></h2>
        <div class= "circle" id= "circle2">
          <h3>{{ words }}</h3>
-         <h4>correct: {{ correct }}</h4>
-         <h4>wrong: {{ wrong }}</h4>
+         <h4><b>correct:</b></h4>
+         <h3>33{{ correct }}</h3>
+         <h4><b>wrong:</b></h4>
+         <h3>11{{ wrong }}</h3>
        </div>
      </span>
-
+     <br>
+     <br>
+     <br>
      <span>
-       <h6>total time: {{ totalTime }}</h6>
+       <h4><b>total time:</b> 00 hr 09 min 15 sec {{ totalTime }}</h4>
      </span>
  </div>
 <!-- end progress bar area-->
