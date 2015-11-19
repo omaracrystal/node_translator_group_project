@@ -24,12 +24,12 @@ A fun translator tool that uses helps users learn new languages and take challen
 ###Below is a how the app looks currently
 **Main Page**                       |    | **Practice Page**
 :----------------------------------:|:--:|:----------------------------------:
-![](translate_Home.png)             |    | ![](translate_Practice.png)
+![](translator_Home.png)             |    | ![](translator_Practice.png)
 
 **Modal on Challenge Page**         |    | **Stats Page**
 :----------------------------------:|:--:|:----------------------------------:
-![](translate_modal.png)            |    | ![](translate_Stats.png)
+![](translator_modal.png)            |    | ![](translator_Stats.png)
 
 
-!**[Challenge Page]**(translate_Home.png)
+!**[Challenge Page]**(translator_Home.png)
 
